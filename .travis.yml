@@ -8,7 +8,7 @@ before_install:
 script:
   -  docker run agarwalaashish92/multi-docker npm test -- --coverage
 
-after_sucess:
+after_success:
   -  docker build -t agarwalaashish92/multi-client ./client
   -  docker build -t agarwalaashish92/multi-nginx ./nginx
   -  docker build -t agarwalaashish92/multi-server ./server
