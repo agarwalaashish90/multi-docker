@@ -23,7 +23,7 @@ after_success:
   - docker push agarwalaashish92/multi-server
   - docker push agarwalaashish92/multi-worker
 
- # Deployment on AWS Environment 
+ # Deployment on AWS Environment
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
